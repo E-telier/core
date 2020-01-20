@@ -1,0 +1,103 @@
+/* PAGE CONTACT */
+.form_contact {
+	text-align:left;
+			
+	font-size:inherit;	
+	
+	display:block;
+}
+
+#form_contact .col {
+	width: 34%;
+	display:inline-block;
+	vertical-align:top;
+}
+#form_contact .col:first-child {
+	width: calc(66% - 20px);
+	margin-right:20px;
+}
+#form_contact label {
+	display:block;
+	font-size:inherit;
+	margin-top:5px;
+}
+#form_contact input,
+#form_contact textarea {
+	border:1px solid #36549c;
+	color:inherit;
+	font-size:inherit;/*13px;*/
+	padding:5px;
+	margin:0px;
+	
+	background-color:#fff;
+	
+	box-sizing:content-box;
+	
+	/*font-family:Tahoma, verdana, sans;*/
+	font-family:'Source Sans Pro', sans-serif;
+	
+	width:calc(100% - 12px);
+	
+	border-radius:3px;
+}
+#form_contact input {
+	height:15px;
+}
+#form_contact input[type='checkbox'] {
+	margin:5px;
+}
+#form_contact textarea {	
+	height:127px; /*96*/
+	display: block;
+}
+#form_contact .invalid {
+	border:1px solid #ff0000;
+}
+#form_contact input.button {
+	
+	color:#ffffff;
+	
+	cursor:pointer;
+			
+	border:1px solid #36549c;
+	background-color:#36549c;
+	
+	text-transform:uppercase;
+	
+	margin-top:29px;
+		
+}
+#form_contact .button:hover  {
+	/*
+	background-position:0 50%;
+	*/
+		background-color:#ffffff;
+	color:#36549c;
+	border:1px solid #36549c;
+}
+
+#form_contact .contact_phone {
+	
+}
+
+#form_contact .capcha label {
+	display:inline-block;
+	margin-right:20px;
+}
+#form_contact .capcha img {
+	vertical-align:middle;
+}
+
+@media (max-width:1023px) {
+
+	
+}
+
+@media (max-width:800px) {
+	#form_contact .col:first-child, #form_contact .col  {
+		margin:0px;
+		width:auto;
+		display:block;
+	}	
+		
+}

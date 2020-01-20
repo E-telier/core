@@ -1,0 +1,105 @@
+/* TABS */
+.tabs .tab {
+	border:1px solid #387dc2;
+	-webkit-border-radius: 3px;
+	-webkit-border-top-left-radius: 0;
+	-moz-border-radius: 3px;
+	-moz-border-radius-topleft: 0;
+	border-radius: 3px;
+	border-top-left-radius: 0;
+	
+	padding:48px;
+	padding-top:70px;	
+	padding-bottom:30px;
+}
+.tabs .tab h4 {
+	font-size:30px;
+}
+.tabs .tab .subblock {
+	width:660px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-bottom:52px;
+}
+.tabs .tab .subblock .col {	
+	display:inline-block;
+	vertical-align:top;
+	line-height:40px;
+	width:306px;
+}
+.tabs .tab .subblock .col:nth-child(odd) {
+	margin-right:48px;
+}
+.tabs .tab .subblock .col label {
+	width:104px;
+	overflow:hidden;
+	display:inline-block;
+	vertical-align:middle;
+	font-size:16px;
+}
+.tabs .tab .subblock .col input, 
+.tabs .tab .subblock .col select {
+	width:190px;/*200 - padding 5*/
+	overflow:hidden;
+}
+.tabs .tab .subblock .col input, 
+.tabs .tab .subblock .col label, 
+.tabs .tab .subblock .col select {
+	height:28px;
+	line-height:28px;
+}
+.tabs .tab .subblock .col.unicol {
+	width:400px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	line-height:48px;
+}
+.tabs .tab .subblock .col.unicol input[type="password"] {
+	width:calc(100% - 12px);
+	height:38px;
+	line-height:38px;
+}
+.tabs .tab .subblock .col.unicol .button {
+	padding-left:15px;
+	padding-right:15px;
+	font-size:15px;
+	width:auto;
+}
+.tabs {
+	position:relative;
+	z-index:10;
+}
+.tabstitles {	
+	margin-bottom:-1px;
+	margin-top:26px;
+	position:relative;
+	z-index:100;	
+}
+.tabstitles .tabtitle {
+	display:inline-block;	
+	border:1px solid #387dc2;
+		
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-top-right-radius: 3px;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-topright: 3px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	
+	width:98px;
+	height:40px;
+	line-height:40px;
+	
+	text-align:center;
+	
+	font-size:16px;
+	
+	margin-right:-1px;
+	
+	cursor:pointer;
+}
+.tabstitles .tabtitle.selected {
+	border-bottom:1px solid #ffffff;
+	color:#81b657;
+}

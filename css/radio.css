@@ -1,0 +1,23 @@
+.radio_container {
+	line-height:inherit;
+	display:inline-block;
+	/*border:1px solid #ff0000;*/
+	vertical-align:middle;	
+	margin-top:-2px;/*5px-2px*/
+	margin-right:-2px;	
+}
+.radio {
+	/*margin-top:-2px;*/
+	line-height:inherit;	
+	vertical-align:middle;
+	display:inline-block;
+}
+.radio_container img {
+	cursor:pointer;
+}
+td .radio_container img {
+	margin-top:0px;
+}
+.col .radio_container {
+	margin-top:8px;/*3px;	*/	
+}

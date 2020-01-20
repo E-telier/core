@@ -1,0 +1,7 @@
+User-Agent: MJ12bot
+Disallow: *
+
+User-Agent: *
+Disallow: /cms/
+Disallow: /_stats/
+Disallow: /_wip/

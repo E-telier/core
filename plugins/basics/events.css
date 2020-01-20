@@ -1,0 +1,80 @@
+.content  #events .event {
+	padding-bottom:20px;
+	margin-bottom:20px;
+	border-bottom:1px solid #cccccc;
+}
+.content  #events .event:last-child {
+	padding-bottom:0px;
+	margin-bottom:0px;
+	border-bottom:none;
+}
+
+.content  #events .event h3 {
+	text-align:left;
+	border:none;
+	margin:0px;
+}
+.content  #events .event a {
+	color:#980025;
+}
+.content  #events .event .date {
+	margin:0px;
+	line-height:30px;
+	font-size:18px;
+	font-weight:bold;
+}
+
+.content  #events #form_articles {
+	padding-top: 25px;
+	padding-bottom: 10px;
+	margin-bottom: 25px;
+	
+	border-bottom:1px solid #cccccc;
+}
+.content  #events #form_articles label, .content  #events #form_articles input, .content  #events #form_articles .inputs {
+	display:inline-block;
+	line-height:40px;
+	height:40px;
+	vertical-align:middle;
+	margin:0px;
+	margin-bottom:8px;
+	padding:0px;
+	color:#333333;	
+	font-size:15px;
+}
+.content  #events #form_articles label {
+	width:275px;
+	font-size:17px;
+}
+.content  #events #form_articles .inputs {
+	width:354px;
+}
+.content  #events #form_articles .inputs input {
+	width:332px;
+	padding-left:10px;
+	padding-right:10px;
+}
+.content  #events #form_articles input[type="submit"] {
+	float:right;
+	border:1px solid #cccccc;
+	color:#ffffff;
+	background-color:#980025;
+	padding-left:25px;
+	padding-right:25px;
+	font-size:17px;
+	cursor:pointer;
+}
+.content  #events #form_articles .dates {	
+	text-align:center;
+}
+.content  #events #form_articles .dates input {
+	width:140px;
+	text-align:center;
+}
+.content  #events #form_articles .dates input:first-child {
+	float:left;
+}
+.content  #events #form_articles .dates input:last-child {
+	float:right;
+}
+

@@ -1,0 +1,77 @@
+/* CUSTOM SELECT */
+.my_select {
+	display:inline-block;
+	position:relative;
+}
+.my_select .my_selected {
+	width:auto;
+	height:25px;
+	line-height:25px;
+	padding-right:25px;
+	
+	display:inline-block;
+	
+	background-color:#ffffff;
+	
+	background-image:url('design/select-bg.gif');
+	background-repeat:no-repeat;
+	background-position:top right;
+	background-size: 17px 100%;
+		
+	/*border-radius:5px;*/
+	border:1px solid #666666;
+	
+	cursor:pointer;
+}
+.my_select .my_options {
+	position:absolute;
+	z-index:1000;
+	
+	background-color:#ffffff;
+	border:1px solid #666666;
+	
+	height:0px;	
+	max-height:150px;
+		
+	overflow-y:auto !important;
+	overflow-x:hidden;
+}
+.img_select .my_options {
+	max-height:250px;
+	opacity:0.0;
+}
+.my_select .my_options .my_option, .my_select .my_selected .my_option {
+	padding:5px;
+	cursor:pointer;
+}
+.my_select .my_selected .my_option {
+	height:inherit;
+	line-height:inherit;
+	padding:0px;
+	padding-left:5px;
+}
+.my_select .my_options .my_option:hover {
+	background-color:#F3F7FA;
+}
+
+.my_select .my_options .img_option, .my_select .my_selected .img_option {
+	width:200px;
+	height:60px; 
+	padding-left:80px; 
+	line-height:60px;
+	padding-right:10px; 
+	border-top:1px solid #cccccc; 
+	background-position:10px center; 
+	background-size: 60px auto; 
+	background-repeat:no-repeat; 
+}
+.my_select .my_selected .img_option {
+	border-top:none;
+	height:inherit;
+	line-height:inherit;
+}
+
+.my_select .my_options .img_option:last-child {
+	margin-bottom:30px;
+	border-bottom:1px solid #cccccc; 
+}

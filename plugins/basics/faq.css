@@ -1,0 +1,19 @@
+#help .messages .message_box {
+	float:none;
+	width:auto;
+}
+
+#help h4 {
+	font-family: 'Open sans', arial, helvetica, sans;
+	font-size:17px;
+	font-weight:300;
+	margin:0px;
+	margin-top:20px;
+	padding:0px;
+	margin-bottom:5px;	
+}
+
+.middle {
+	height:auto;
+	min-height:734px;
+}

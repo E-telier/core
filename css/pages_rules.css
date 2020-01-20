@@ -1,0 +1,113 @@
+.creations .content .block .element {
+	
+	box-shadow: 2px 3px 10px 2px #C7D2D9;
+	
+	display:inline-block;
+	margin-right:30px;
+	margin-bottom:30px;
+		
+	overflow:hidden;
+	
+	text-align:center;
+	
+	vertical-align:top;
+}
+.creations .content .block .element img {
+	width:100px;
+	height:75px;
+	vertical-align: top;
+}
+.creations .content .block .element .title {
+	display:none;
+}
+.creations .content .block .creations, .creations .content .block .creation {
+	position:relative;
+}
+.creations .content .block .creation h1 {
+	max-width:35%;
+}
+.creations .content .block .element .title:hover {
+	text-decoration:none;
+}
+
+.creations .content .block .creation #images {
+	background-color: #262627;
+	padding: 20px;
+	line-height:136px;
+}
+.creations .content .block .creation #images .img {
+	display:inline-block;
+}
+.creations .content .block .creation #images img {
+	margin-left:4px;
+	margin-right:4px;
+	display:inline-block;
+	border: 4px solid #262627;
+	outline: 1px solid #666;
+	vertical-align: middle;
+}
+.creations .content .block .creation .tech {	
+	position:absolute;
+	top:0px;
+	right:0px;
+	display:inline-block;
+	max-width:65%;
+}
+
+.contact .content #jauge {
+	display:block;
+	position:relative;
+							
+	margin-top:20px;
+	margin-bottom:20px;
+	
+}
+
+.contact .content .block .input {
+	margin-bottom:5px;	
+}
+
+.contact .content .block .input label {
+	display:inline-block;
+	width:40%;
+	line-height:30px;
+	color:#127DB3;
+	
+}
+.contact .content .block .input input[type="text"], .contact .content .block .input select, .contact .content .block .input .choices {
+	display:inline-block;
+	width:calc(60% - 12px);
+	height:26px;
+	line-height:26px;
+	vertical-align:top;
+	padding:5px;
+}
+.contact .content .block .input .choices {
+	height:auto;
+}
+.contact .content .block .input .checklabel {
+	width:auto;
+	color:inherit;
+	margin-left:5px;
+	margin-right:15px;
+	vertical-align: middle;
+}
+.contact .content .block  textarea {
+	width:calc(100% - 12px);
+	padding:5px;
+}
+
+.contact .content .block .legal_text {
+	position:absolute;
+	bottom:30px;
+	left:30px;
+	
+	width:calc(100% - 310px);
+}
+
+.contact .content .block .success {
+	border-radius: 20px 0 20px 0;
+	background-color: #59D899;
+	padding: 20px;
+	margin-bottom:20px;
+}

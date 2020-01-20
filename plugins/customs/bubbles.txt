@@ -1,0 +1,10 @@
+{
+	"assets": {
+		"images": [
+			"plugins/customs/bubble.png"
+		],
+		"sounds": [
+		
+		]
+	}
+}

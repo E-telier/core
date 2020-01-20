@@ -1,0 +1,16 @@
+.blocks .block .article {
+	padding-bottom:20px;
+	margin-bottom:20px;
+	border-bottom:1px solid #cccccc;
+}
+.blocks .block .article:last-child {
+	padding-bottom:0px;
+	margin-bottom:0px;
+	border-bottom:none;
+}
+.blocks .block .article h4 a {
+	font-size:inherit;
+	color:inherit;
+	text-decoration:inherit;
+	font-weight:inherit;
+}

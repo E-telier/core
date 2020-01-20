@@ -1,0 +1,37 @@
+#slideshow {
+
+}
+#slideshow .menu {
+	text-align:right;
+	top:auto;
+	bottom:-26px;
+	left:auto;
+	right:0px;
+}
+#slideshow .menu .selector {
+	margin-left:8px;	
+}
+#slideshow .menu .selector .cube {
+    width: 25px;
+    height: 25px;
+	line-height:25px;
+		
+    background-color: #36549c;
+	color: #36549c;
+	border:0px solid #000;
+	
+	opacity:0.7;
+	
+	font-size:12px;
+}
+#slideshow .menu .selector.selected .cube,
+#slideshow .menu .selector:hover .cube {
+	color: #fff;
+	opacity:1.0;
+}
+#slideshow .description,
+#slideshow #panels,
+#slideshow #arrow_left,
+#slideshow #arrow_right {
+	display:none;
+}

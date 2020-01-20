@@ -1,0 +1,134 @@
+.egallery_container {
+	
+	opacity:0.0;
+	
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	
+	background-color:rgba(20,125,180,0.3);
+	
+	z-index:1000;
+	
+	transition: opacity 1s;
+}
+
+.egallery_container .egallery {
+	max-width:75%;
+	max-height:75%;
+	
+	/*overflow:hidden;*/
+	
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	
+	border:1px solid #000;
+	
+	background-color:#fff;
+	
+	box-shadow:0px 3px 10px 3px #333;
+}
+
+.egallery_container .close {
+	position:absolute;
+	top:10px;
+	right:10px;
+	
+	width:30px;
+	height:25px;
+	
+	text-align:center;
+	
+	background-color:#fff;
+	
+	background-image:url('../../design/cross-on.gif');
+	background-size:100%;
+	
+	cursor:pointer;
+	
+	font-size:0px;
+	
+	box-shadow:0px 1px 3px 1px #333;
+}
+.egallery_container .close:hover {
+	box-shadow:0px 0px 1px 0px #000;
+}
+
+.egallery_container .navigator_container {
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	
+	z-index:1001;
+	
+	width:75%;
+}
+.egallery_container .navigator_container>div {
+	display:inline-block;
+	font-size:0px;
+	width:30px;
+	height:25px;
+	
+	background-size:100%;
+	
+	position:absolute;
+	
+	cursor:pointer;
+	
+	box-shadow:0px 1px 3px 1px #333;
+		
+}
+.egallery_container .navigator_container>div:hover {
+	box-shadow:0px 0px 1px 0px #000;
+}
+
+.egallery_container .navigator_container .previous {
+	background-image:url('../../design/slideshow_arrow-left-on.gif');	
+	left:-20px;
+}
+
+.egallery_container .navigator_container .next {
+	background-image:url('../../design/slideshow_arrow-right-off.gif');	
+	right:-20px;
+}
+
+
+.egallery_container .egallery .img {
+	width:100%;
+	
+	background-image:url('../../design/load.gif');
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:24px 24px;
+	
+	margin:0px;
+}
+.egallery_container .egallery .img img {
+	width:100%;
+	height:auto;
+	
+	transition:opacity 0.5s;
+}
+
+@media (max-width:799px) {
+	.egallery_container .egallery {
+		max-width:90%;
+		max-height:90%;
+	}
+	.egallery_container .navigator_container {	
+		width:100%;
+	}
+	
+	.egallery_container .navigator_container .previous {		
+		left:2px;
+	}
+
+	.egallery_container .navigator_container .next {		
+		right:2px;
+	}
+}

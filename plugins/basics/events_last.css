@@ -1,0 +1,23 @@
+.blocks .block .event {
+	padding-bottom:20px;
+	margin-bottom:20px;
+	border-bottom:1px solid #cccccc;
+}
+.blocks .block .event:last-child {
+	padding-bottom:0px;
+	margin-bottom:0px;
+	border-bottom:none;
+}
+.blocks .block .event h4:first-child {
+	font-size:18px;
+}
+.blocks .block .event .img_center {
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.blocks .block .event h4 a {
+	font-size:inherit;
+	color:inherit;
+	text-decoration:inherit;
+	font-weight:inherit;
+}

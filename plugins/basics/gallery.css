@@ -1,0 +1,160 @@
+#gallery .loading {
+	display:none;
+}
+#gallery .img {
+	border:5px solid #fff;
+	
+	border-radius:50%;
+	width:150px;
+	height:150px;
+	
+	overflow:hidden;
+		
+	position:relative;
+}
+
+#gallery .img:hover {
+	border:5px solid #D75162;
+}
+
+#gallery .img img {
+    max-width: none;
+    height: auto;
+	
+	position:absolute;
+	top:50%;
+	left:50%;
+	
+	transform:translate(-50%, -50%);
+	
+}
+#gallery .img:hover img {
+	transform: translate(-50%, -50%) scale(1.2);
+}
+
+#gallery.loaded .img,
+#gallery.loaded .img img {
+	transition:all 0.5s;
+}
+
+#gallery_bg {
+	position:absolute;
+	top:0;
+	left:0;
+	background-color:rgba(0,0,0,0.75);
+	width:1%;
+	height:1%;
+	overflow:hidden;
+	top:0;
+	left:0;
+	z-index:100;
+	display:none;
+}
+#gallery_slideshow {
+	position:absolute;
+	top:0;
+	left:0;
+	width:5000px;
+	z-index:120;
+	
+	opacity:0.0;
+	
+}
+#gallery_slideshow .img {
+	float:left;
+	margin:0;
+	margin-left:30px;
+	margin-right:30px;
+	
+	padding:0;
+	cursor :pointer;
+	
+	text-align:center;
+					
+	position:relative;
+	z-index:130;
+		
+	opacity:0.7;
+	
+	-webkit-transition: opacity 0.5s; /* Safari */
+    transition: opacity 0.5s;
+	
+}
+			
+#gallery_slideshow .selected.img {
+	opacity:1.0;
+}
+
+#gallery_closebtn {
+	
+	background-color:#000000;
+	color:#ffffff;
+	padding:10px;
+	border:1px solid #ffffff;
+	font-weight:bold;
+	
+	cursor :pointer;
+	
+	position:absolute;
+	top:0;
+	right:0;
+	z-index:150;
+	
+	text-decoration:none;
+}
+#gallery_closebtn:hover {
+	text-decoration:underline;
+}
+.gallery_legend {
+	color:#ffffff;
+	width:100%;
+	
+	font-size: 14px;
+	line-height: 30px;
+	background-color: rgba(0,0,0,0.6);
+	margin-top:10px;
+	
+	display:none;
+}
+.selected .gallery_legend {
+	display:block;
+}
+#gallery_closebg {
+	position:absolute;
+	z-index:115;
+}
+#gallery_bg .left_arrow, #gallery_bg .right_arrow {
+	position:absolute;
+	cursor:pointer;
+	top:20px;
+	z-index:150;
+	
+	padding:20px;
+}
+#gallery_bg .left_arrow {
+	left:20px;
+}
+#gallery_bg .right_arrow {
+	right:20px;				
+}
+
+@media (max-width:799px) {
+	#gallery_bg .img .gallery_legend, #gallery_bg .img.selected .gallery_legend {
+		display:none;
+	}
+	
+	#gallery_bg .left_arrow, #gallery_bg .right_arrow {
+	position:absolute;
+	cursor:pointer;
+	bottom:10px;
+	z-index:150;
+	
+	padding:0px;
+}
+#gallery_bg .left_arrow {
+	left:10px;
+}
+#gallery_bg .right_arrow {
+	right:10px;				
+}
+}
